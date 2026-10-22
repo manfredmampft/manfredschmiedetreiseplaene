@@ -58,7 +58,7 @@
 <body>
   <div class="card">
     <h1>Türchen 17</h1>
-    <p>Gutvik Vikhammer Knorrig Bittergurka Mopsig Kagge Groggy Blixtsnabb</p>
+    <p>Diese autonome Inselgruppe gehört zu Finnland, hat Schwedisch als Amtssprache – und eine eigene Flagge, eigene Briefmarken und ein eigenes Parlament.</p>
     <p>In welchem Land bin ich heute?</p>
     <div class="answer-row">
       <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben">
@@ -73,7 +73,7 @@
   <script>
     function check() {
       const val = document.getElementById('answer').value.toLowerCase().trim();
-      const allowed = ["schweden", "sweden", "se"];
+      const allowed = ["aland", "åland"];
       if (allowed.includes(val)) {
         // Erfolgsseite oder Text anzeigen – hier Beispiel Weiterleitung
         window.location.href = "success_day17_6a901dec.html"; // Passe die Erfolgsseite an!

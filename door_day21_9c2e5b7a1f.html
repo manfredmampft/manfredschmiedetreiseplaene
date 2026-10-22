@@ -58,10 +58,7 @@
 <body>
   <div class="card">
     <h1>Türchen 21</h1>
-    <p>Die Größten am Meer<br>
-    wenn Holland nicht wär<br>
-    so aber immerhin<br>
-    am Mittelmeer</p>
+    <p>In diesem Land gibt es für jeden Einwohner Platz in einem Atomschutzbunker.</p>
     <p>In welchem Land bin ich heute?</p>
     <div class="answer-row">
       <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben">
@@ -76,7 +73,7 @@
   <script>
     function check() {
       const val = document.getElementById('answer').value.toLowerCase().trim();
-      const allowed = ["montenegro", "me"];
+      const allowed = ["schweiz", "switzerland"];
       if (allowed.includes(val)) {
         // Erfolgsseite oder Text anzeigen – hier Beispiel Weiterleitung
         window.location.href = "success_day21_0fad46bc.html"; // Passe die Erfolgsseite an!

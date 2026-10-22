@@ -66,21 +66,7 @@
 <body>
   <div class="card">
     <h1>Türchen 22</h1>
-    <h2>Ich bin dann mal am Backen ….</h2>
-    <p><strong>Für 4 Personen</strong></p>
-
-    <h3>Zutaten</h3>
-    <ul>
-      <li>240 g weiche Butter</li>
-      <li>140 g Zucker</li>
-      <li>2 Päckchen Vanillezucker (optional)</li>
-      <li>4 Eier (Gr. M)</li>
-      <li>500 g Weizenmehl (Type 405; alternativ: Dinkelmehl Type 630)</li>
-      <li>2 TL Backpulver</li>
-      <li>700 ml Milch (oder halb Milch halb Wasser)</li>
-      <li>2 Prisen Salz</li>
-      <li>Nach Belieben Puderzucker, Früchte oder Vanilleeis zum Garnieren</li>
-    </ul>
+    <p>Die Lieblingsinsel aller Honigbären</p>
     <p>In welchem Land bin ich heute?</p>
     <div class="answer-row">
       <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben" />
@@ -95,7 +81,7 @@
   <script>
     function check() {
       const val = document.getElementById('answer').value.toLowerCase().trim();
-      const allowed = ["belgien", "belgium", "be"];
+      const allowed = ["malta"];
       if (allowed.includes(val)) {
         window.location.href = "success_day22_9c2be703.html"; // Erfolgsseite
       } else {

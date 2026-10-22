@@ -58,8 +58,7 @@
 <body>
   <div class="card">
     <h1>Türchen 14</h1>
-    <img src="signal_14.jpeg" alt="Bild für Türchen 24" style="max-width: 100%; height: auto;">
-
+    <p>Dieses Land wird von zwei ausländischen Staatsoberhäuptern mitregiert – obwohl es eine eigene Regierung hat.</p>
     <p>In welchem Land bin ich heute?</p>
     <div class="answer-row">
       <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben">
@@ -74,7 +73,7 @@
   <script>
     function check() {
       const val = document.getElementById('answer').value.toLowerCase().trim();
-      const allowed = ["frankreich", "france", "fr"];
+      const allowed = ["andorra"];
       if (allowed.includes(val)) {
         // Erfolgsseite oder Text anzeigen – hier Beispiel Weiterleitung
         window.location.href = "success_day14_f750c9a4.html"; // Passe die Erfolgsseite an!

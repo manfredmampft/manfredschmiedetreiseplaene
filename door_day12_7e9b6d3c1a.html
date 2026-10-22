@@ -58,7 +58,7 @@
 <body>
   <div class="card">
     <h1>Türchen 12</h1>
-    <p>Rubinrot Weiß Astroblau</p>
+    <p>Die Hauptstadt dieses Landes liegt an einem Dreiländereck.</p>
     <p>In welchem Land bin ich heute?</p>
     <div class="answer-row">
       <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben">
@@ -73,7 +73,7 @@
   <script>
     function check() {
       const val = document.getElementById('answer').value.toLowerCase().trim();
-      const allowed = ["luxemburg", "luxembourg", "lu"];
+      const allowed = ["slowakei", "slovakia"];
       if (allowed.includes(val)) {
         // Erfolgsseite oder Text anzeigen – hier Beispiel Weiterleitung
         window.location.href = "success_day12_04edb861.html"; // Passe die Erfolgsseite an!

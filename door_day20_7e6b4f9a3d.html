@@ -58,7 +58,7 @@
 <body>
   <div class="card">
     <h1>Türchen 20</h1>
-    <p>Und ich dachte mit diesem Land gewinne ich das Spiel aber es hat lediglich den gleichen Wert wie Österreich. </p>
+    <p>Dieses Land ist der größte Haselnussproduzent der Welt: Rund zwei von drei Haselnüssen stammen von hier.</p>
     <p>In welchem Land bin ich heute?</p>
     <div class="answer-row">
       <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben">
@@ -73,7 +73,7 @@
   <script>
     function check() {
       const val = document.getElementById('answer').value.toLowerCase().trim();
-      const allowed = ["nordmakedonien", "north macedonia", "mk", "makedonien", "nordmazedonien", "mazedonien", "mattsedonien"];
+      const allowed = ["türkei", "tuerkei", "turkey"];
       if (allowed.includes(val)) {
         // Erfolgsseite oder Text anzeigen – hier Beispiel Weiterleitung
         window.location.href = "success_day20_58e7c9a6.html"; // Passe die Erfolgsseite an!

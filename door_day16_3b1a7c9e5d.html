@@ -58,8 +58,7 @@
 <body>
   <div class="card">
     <h1>Türchen 16</h1>
-    <audio id="morseAudio" src="https://raw.githubusercontent.com/manfredmampft/manfredontour/main/morse_audio.wav"></audio>
-    <button onclick="document.getElementById('morseAudio').play()">Audio abspielen</button>
+    <p>Dieses europäische Land wird laut UN-Prognose bis 2050 prozentual am stärksten schrumpfen.</p>
     <p>In welchem Land bin ich heute?</p>
     <div class="answer-row">
       <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben">
@@ -74,7 +73,7 @@
   <script>
     function check() {
       const val = document.getElementById('answer').value.toLowerCase().trim();
-      const allowed = ["bosnien und herzegowina", "bosnia and herzegovina", "ba", "bosnia"];
+      const allowed = ["bulgarien", "bulgaria"];
       if (allowed.includes(val)) {
         // Erfolgsseite oder Text anzeigen – hier Beispiel Weiterleitung
         window.location.href = "success_day16_b34caf09.html"; // Passe die Erfolgsseite an!

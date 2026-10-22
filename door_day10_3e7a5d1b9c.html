@@ -58,9 +58,7 @@
 <body>
   <div class="card">
     <h1>Türchen 10</h1>
-    <p>Etwas Mathematik schadet niemandem. Also Stift und Papier bitte raus. Du hast ein Rechteck ABCD. Und dann gibt es einen Punkt P. Vielleicht im Rechteck, vielleicht auch außerhalb. Der Abstand von A zu P ist 7, von B zu P 11, von C zu P 9, dann von D zu P?
-    </p>
-
+    <p>Dieses Binnenland wird ausschließlich von anderen Binnenländern umgeben.</p>
     <p>In welchem Land bin ich heute?</p>
     <div class="answer-row">
       <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben">
@@ -75,7 +73,7 @@
   <script>
     function check() {
       const val = document.getElementById('answer').value.toLowerCase().trim();
-      const allowed = ["england", "uk", "gb", "vereinigtes königreich", "united kingdom", "großbritannien", "grossbritannien"];
+      const allowed = ["liechtenstein"];
       if (allowed.includes(val)) {
         // Erfolgsseite oder Text anzeigen – hier Beispiel Weiterleitung
         window.location.href = "success_day10_a9f83e5b.html"; // Passe die Erfolgsseite an!
