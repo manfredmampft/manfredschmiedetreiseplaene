@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Türchen 6 – Adventskalender</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, #0f172a, #0b132b);
+      color: white;
+      font-family: system-ui, Arial, sans-serif;
+      padding: 24px;
+      overflow-y: auto;
+    }
+
+    .card {
+      background: white;
+      color: #101020;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .card ul,
+    .card ol {
+      text-align: left;
+      margin: 0 auto;
+      display: inline-block;
+    }
+
+    h1 { margin-top: 0; }
+
+    input, button {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .answer-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+      justify-content: center;
+    }
+
+    p#feedback {
+      margin-top: 10px;
+      color: #ff6b6b;
+      min-height: 18px;
+    }
+
+    a.back-link {
+      display: block;
+      margin-top: 20px;
+      color: #ff6b6b;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      body {
+        align-items: flex-start;
+        padding: 6px;
+      }
+      .card {
+        padding: 14px;
+        max-width: 100%;
+        border-radius: 0;
+        font-size: 1rem;
+      }
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .grid-item {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: #ffcc00;
+      padding: 16px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    /* 🔽 Responsive grid behavior */
+    @media (max-width: 900px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 400px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+  <h1>Türchen 6</h1>
+  <p>Erst wirkt es einfach aber dann?</p>
+  
+  <!-- Das neue Grid BEGINN -->
+  <div class="grid-container">
+    <div class="grid-item">Sibirien</div>
+    <div class="grid-item">Bosporus</div>
+    <div class="grid-item">Nil</div>
+    <div class="grid-item">Pizza</div>
+    <div class="grid-item">Ankara</div>
+    <div class="grid-item">Wodka</div>
+    <div class="grid-item">Vesuv</div>
+    <div class="grid-item">Oase</div>
+    <div class="grid-item">Kreml</div>
+    <div class="grid-item">Pyramide</div>
+    <div class="grid-item">Baklava</div>
+    <div class="grid-item">Florenz</div>
+    <div class="grid-item">Sphinx</div>
+    <div class="grid-item">Gondel</div>
+    <div class="grid-item">Zar</div>
+    <div class="grid-item">Hammam</div>
+  </div>
+  <!-- Das neue Grid ENDE -->
+
+    <p>In welchem Land bin ich heute?</p>
+    <div class="answer-row">
+      <input id="answer" placeholder="Antwort eingeben" aria-label="Antwort eingeben">
+      <button onclick="check()">Absenden</button>
+    </div>
+
+    <p id="feedback" role="alert" aria-live="assertive"></p>
+
+    <a href="index.html" class="back-link">← Zurück zum Adventskalender</a>
+  </div>
+
+  <script>
+    function check() {
+      const val = document.getElementById('answer').value.toLowerCase().trim();
+      const allowed = ["ägypten", "egypt", "eg"];
+      if (allowed.includes(val)) {
+        // Erfolgsseite oder Text anzeigen – hier Beispiel Weiterleitung
+        window.location.href = "success_day6_d2a9e745.html"; // Passe die Erfolgsseite an!
+      } else {
+        document.getElementById('feedback').textContent = "Fast! Versuch es nochmal 😊";
+      }
+    }
+  </script>
+</body>
+</html>
